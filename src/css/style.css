@@ -14,3 +14,47 @@ body {
     width: 100%;
     height: 100%;
 }
+
+header {
+    width: 100%;
+    height: 74px;
+}
+
+header h2 {
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    color: #E5A5B7;
+}
+
+header .hea {
+    width: 100%;
+    height: 44px;
+    overflow: hidden;
+}
+
+header .list {
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .list li {
+    width: 60px;
+    text-align: center;
+}
+
+header .list li a {
+    display: block;
+    width: 60px;
+    height: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+}
+
+header .list li a.active {
+    border-bottom: 1px solid #E5A5B7;
+}

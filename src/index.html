@@ -6,10 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/zepto.js"></script>
+    <script src="js/better-scroll.js"></script>
 </head>
 
 <body>
-    <div class="wrap"></div>
+    <div class="wrap">
+        <header>
+            <h2>全场包邮 低至5元</h2>
+            <div class="hea" id="hea">
+                <ul class="list" id="list">
+                    <li><a href="#" class="active">推荐</a></li>
+                    <li><a href="#">女装</a></li>
+                    <li><a href="#">美食</a></li>
+                    <li><a href="#">美妆个护</a></li>
+                    <li><a href="#">男装</a></li>
+                    <li><a href="#">内衣</a></li>
+                    <li><a href="#">鞋库</a></li>
+                    <li><a href="#">洗发水</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <script>
+        $("#hea ul").width($("#hea ul li").width() * $("#hea ul li").length);
+        var BScroll = new BScroll('#hea', {
+            scrollX: true
+        });
+    </script>
 </body>
 
 </html>
