@@ -13,25 +13,76 @@ body {
 .wrap {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+header h2 {
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    color: #E5A5B7;
+}
+
+header .hea {
+    width: 100%;
+    height: 44px;
+    overflow: hidden;
+}
+
+header .list {
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .list li {
+    width: 60px;
+    text-align: center;
+}
+
+header .list li a {
+    display: block;
+    width: 60px;
+    height: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+}
+
+header .list li a.active {
+    border-bottom: 1px solid #E5A5B7;
+}
+
+.content {
+    overflow-y: auto;
+}
+
+.content dl dd p span {
+    font-size: 14px;
 }
 
 footer {
     width: 100%;
-    height: 50px;
+    height: 70px;
     display: flex;
-    align-items: center;
 }
 
 footer dl {
-    flex: 1;
-    text-align: center;
-}
-
-footer dl i.iconfont {
     width: 20%;
+    height: 70px;
+    float: left;
     text-align: center;
 }
 
-footer dl.bg {
-    color: #F47594;
+footer dl dd {
+    font-size: 12px;
 }
