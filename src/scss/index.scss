@@ -1,0 +1,116 @@
+@import "_common.scss";
+// .wrap {
+//     width: 100%;
+//     height: 100%;
+//     display: flex;
+//     flex-direction: column;
+// }
+section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    .hot {
+        display: flex;
+        padding: 0 pxTorem(5px);
+        box-sizing: border-box;
+        width: 100%;
+        height: pxTorem(40px);
+        justify-content: space-between;
+        align-items: center;
+        font-size: pxTorem(16px);
+        .iconfont {
+            font-size: pxTorem(16px);
+            color: red;
+        }
+    }
+    .swiper-container {
+        width: 100%;
+        height: pxTorem(160px);
+        flex-shrink: 0;
+        .swiper-wrapper {
+            width: 100%;
+            height: pxTorem(160px);
+            .swiper-slide {
+                display: flex;
+                justify-content: space-around;
+                dl {
+                    height: 100%;
+                    width: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    dt {
+                        height: 60%;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    dd {
+                        font-size: pxTorem(14px);
+                        text-align: center;
+                        .pri {
+                            color: red;
+                            margin-top: pxTorem(10px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    h3 {
+        width: 100%;
+        height: pxTorem(40px);
+        text-align: center;
+        line-height: pxTorem(40px);
+        font-size: pxTorem(16px);
+        background-color: rgba(124, 117, 117, 0.2);
+    }
+    .content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background-color: rgba(218, 211, 211, 0.2);
+        dl {
+            width: 46%;
+            background: #fff;
+            margin: pxTorem(5px);
+            dt {
+                width: 100%;
+                height: pxTorem(150px);
+                img {
+                    width: auto;
+                    height: 100%;
+                }
+            }
+            dd {
+                display: flex;
+                flex-direction: column;
+                .one {
+                    line-height: pxTorem(20px);
+                    .kuang {
+                        padding: pxTorem(4px);
+                        border: pxTorem(1px) solid #ccc;
+                        margin-right: pxTorem(5px);
+                    }
+                }
+                .two {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: pxTorem(5px);
+                    align-items: center;
+                    .yuan {
+                        color: red;
+                    }
+                    .kuang {
+                        padding: pxTorem(4px);
+                        border: pxTorem(1px) solid #ccc;
+                        margin-right: pxTorem(5px);
+                    }
+                }
+            }
+        }
+    }
+}
